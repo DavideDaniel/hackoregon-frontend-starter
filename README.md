@@ -23,6 +23,18 @@ Running tests with coverage will take longer, but it's good to know what lines s
 
 Much like `npm start`, `npm test` will watch files and automatically print out the new test output. Watch it in your terminal.
 
+#### Working with the [component library](https://github.com/hackoregon/component-library) and the project site at the same time
+
+The component library is required by each project site using an npm dependency. Npm offers a utility called [`npm link`](https://docs.npmjs.com/cli/link) for using a local copy of a dependency when developing.
+
+Once you have cloned both the component library and this project site, do the following:
+
+1. `cd` to your local component-library checkout
+2. Run `npm link`
+3. `cd` to your local project site checkout
+4. Run `npm link react-component-library`
+
+Now any code in the project site that relies on components from the component library will import modules directly from your local checkout of component-library. Likewise, any changes you make to your local checkout of component-library will impact the project site. The project site will also watch these component-library changes and hot reload localhost:3000 for you.
 
 #### Next up
 - [ ]  Docs
