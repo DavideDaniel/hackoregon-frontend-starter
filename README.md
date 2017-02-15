@@ -3,16 +3,29 @@
 This is a starter kit for Hack Oregon front-end development using React + Redux.
 This repo should help get started and keep the different projects aligned.
 
-#### Guide
+#### Getting Started
 1. Get [Node 6.5 +](https://nodejs.org) - I recommend using [Node Version Manager](https://github.com/creationix/nvm).
 2. `git clone https://github.com/hackoregon/hackor-frontend-starter.git`.
 3. `npm i` - install
 4. `npm start` - start dev mode (watching tests + linter)
-5. `npm test` - run tests
-6. `npm run coverage` - run tests w/ coverage
+
+Visit [localhost:3000](http://localhost:3000) in your browser to see the site.
+Save changes to files and the site will automatically update. No need to refresh!
+
+#### Running Tests
+
+There are two options:
+
+1. `npm test` - run tests
+2. `npm run coverage` - run tests w/ coverage
+
+Running tests with coverage will take longer, but it's good to know what lines still need testing. CI tooling with use the `npm run coverage` command.
+
+Much like `npm start`, `npm test` will watch files and automatically print out the new test output. Watch it in your terminal.
+
 
 #### Next up
-[ ]  Docs
-[ ]  Ability to remove reference files
+- [ ]  Docs
+- [ ]  Ability to remove reference files
 
 [![Stories in Ready](https://badge.waffle.io/hackoregon/hackoregon-frontend-starter.png?label=ready&title=Ready)](http://waffle.io/hackoregon/hackoregon-frontend-starter)
